@@ -1,42 +1,78 @@
 class Game
 
-  COLOR_CHOICES = ["R", "G", "B", "Y", "O", "P", "V", "W"]
+  LETTER_CHOICES = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
   def initialize
     @board = Array.new(12) { Array.new(8, "x") }
-    @code = COLOR_CHOICES.sample(4)
+    @code = LETTER_CHOICES.sample(4)
     @guesses_left = 12
+    puts "Welcome to my Mastermind game!"
+    puts "You have 12 turns to try to guess the computer's four-letter code."
+    puts "The computer gives you feedback next to your guesses on the board."
+    puts "A 2 means that one of your letters is in the code, but you guessed the wrong position."
+    puts "A 1 means that one of your letters is in the code, and you guessed the right position."
+    puts "A 0 means that you guessed a letter that is not in the code."
+    puts "Good luck!"
   end
 
-  attr_accessor :code
-
-  #To play, I need to:
-  #1) Get a guess from the user, repeating the question if input is incorrect.
-  #2) Store that guess in @board[@guesses_left - 12][0..3]
-  #3) Take the guess and compare it to the computer's code.
-  #4) Return an array of 2s, 1s, and 0s reflecting the accuracy of the guess.
-  #5) Take the feedback array and store it in @board[@guesses_left - 12][4..7]
-  #6) Print the board and all its current content
   def play
 
-    guess = get_guess
-    feedback = compare_guess(guess)
-    store_feedback(feedback)
+    while @guesses_left > 0
+      guess = get_guess
+      feedback = compare_guess(guess)
+      store_feedback(feedback)
 
-    print_board
+      print_board
 
-    @guesses_left -= 1
+      if guess == @code
+        puts "Congratulations! You guessed the code correctly."
+        break
+      end
+
+      @guesses_left -= 1
+    end
+    
+    if @guesses_left == 0
+      puts "You're out of guesses. Better luck next time!"
+    end
+    
   end
 
   def get_guess
-    puts "Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: "
+    puts "Valid choices: A B C D E F G H"
+    puts "Enter your 4-letter guess, separating the letters with spaces: "
+    #guess = guess.split(" ")
     guess = gets.chomp.split(" ")
+    while input_error(guess)
+      puts "Invalid input! Please try again. Hint: use uppercase and put spaces between the letters."
+      puts "Valid choices: R B G Y O V P W"
+      puts "Enter your 4-letter guess, separating the letters with spaces: "
+      guess = gets.chomp.split(" ")
+    end
+
     i = 0
     while i <= 3
-      @board[@guesses_left - 12][i] = guess[i]
+      @board[@guesses_left - 1][i] = guess[i]
       i += 1
     end
+
     return guess
+  end
+
+  #Checks that the user input is valid and the correct length
+  def input_error(input)
+    if input.length != 4
+      return true
+    else
+      input.each do |item|
+        if LETTER_CHOICES.include?(item)
+          next
+        else
+          return true
+        end
+      end
+    end
+    return false
   end
 
   def compare_guess(guess)
@@ -60,7 +96,7 @@ class Game
   end
 
   def store_feedback(feedback_array)
-    current_row = @guesses_left - 12
+    current_row = @guesses_left - 1
     i = 0
     while i <= 3
       @board[current_row][i + 4] = feedback_array[i]
@@ -70,10 +106,10 @@ class Game
 
   def draw_row(row)
     print "+---+---+---+---+---+---+---+---+\n"
-    i = 7
-    while i >= 0
+    i = 0
+    while i <= 7
       print "| #{row[i]} "
-      i -= 1
+      i += 1
     end
     print "|"
   end
@@ -91,3 +127,10 @@ end
 
 test = Game.new()
 test.play
+puts "Do you want to play again? Y/N"
+play_again = gets.chomp
+while play_again == "Y" || play_again == "y"
+  new_game = Game.new()
+  new_game.play
+end
+

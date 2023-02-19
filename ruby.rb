@@ -1254,4 +1254,2887 @@ O W Y P
 | x | x | x | x | x | x | x | x |
 +---+---+---+---+---+---+---+---+
 | x | x | x | x | x | x | x | x |
-+---+---+---+---+---+
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ git commit -m "Array and basic methods working but  game not really set up right ne[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kset up right yet"
+[?2004lOn branch gameobject
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   README.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.vscode/[m
+	[31mruby.rb[m
+	[31mscript.rb[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ git add .
+[?2004l[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ git commit -m "Array and basic methods working but  game not set up right yet"
+[?2004l[gameobject be9a808] Array and basic methods working but game not set up right yet
+ 4 files changed, 1389 insertions(+)
+ create mode 100644 .vscode/launch.json
+ create mode 100644 ruby.rb
+ create mode 100644 script.rb
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ git status
+[?2004lOn branch gameobject
+nothing to commit, working tree clean
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lscript.rb:91: syntax error, unexpected end-of-input, expecting `end'
+[m[1mtest.play[1;4m[;1m[m
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R O Y W
+script.rb:27:in `block in get_guess': [1mno implicit conversion of String into Integer ([1;4mTypeError[m[1m)[m
+	from script.rb:26:in `each'
+	from script.rb:26:in `get_guess'
+	from script.rb:13:in `play'
+	from script.rb:92:in `<main>'
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R Y O W
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | W | O | Y | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ v[Kruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y U I W
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | I | U | Y |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y T W O YU  U
+true
++---+---+---+---+---+---+---+---+
+| 1 | 0 | 0 | 0 | U | W | T | Y |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+A B C d D
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ O W Y H
+[?2004lO: command not found
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ U I O H
+[?2004lU: command not found
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ W E T H
+[?2004lW: command not found
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ R G O Y
+[?2004lCommand 'R' not found, but can be installed with:
+sudo apt install r-base-core
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rbu[K
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+b t r e
+b
+t
+r
+e
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ b t r e
+[?2004lb: command not found
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ script ruby.r[K[K[K[K[K[K[K[K[K[K[K[K[Kruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R U G N
+R
+U
+G
+N
+R
+script.rb:29:in `block in get_guess': [1mundefined method `typeof?' for "R":String ([1;4mNoMethodError[m[1m)[m
+
+[1m      i.typeof?[m
+[1m       ^^^^^^^^[m
+	from script.rb:27:in `each'
+	from script.rb:27:in `get_guess'
+	from script.rb:97:in `<main>'
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R A C d D E
+A
+C
+D
+E
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+A
+C
+D
+E
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lscript.rb:114: syntax error, unexpected `end', expecting end-of-input
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lscript.rb:22:in `get_guess': [1mwrong number of arguments (given 0, expected 1) ([1;4mArgumentError[m[1m)[m
+	from script.rb:13:in `play'
+	from script.rb:116:in `<main>'
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+script.rb:25:in `get_guess': [1mundefined method `chomp' for nil:NilClass ([1;4mNoMethodError[m[1m)[m
+
+[1m    guess = guess.chomp.split(" ")[m
+[1m                 ^^^^^^[m
+	from script.rb:13:in `play'
+	from script.rb:116:in `<main>'
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R T G X
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+U I O P
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+E R M F
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y H T G
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+3 5 2 3
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+a b c d
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+r g b w
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G B W
+R
+G
+B
+W
+true
+true
+true
+true
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | W | B | G | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+G V W Y
+G
+V
+W
+Y
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | Y | W | V | G |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lscript.rb:131: syntax error, unexpected end-of-input, expecting `end'
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+t y     T Y O G
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G O Y
+R
+G
+O
+Y
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | Y | O | G | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+script.rb:20:in `play': [1mundefined local variable or method `code' for #<Game:0x00007fcb113c2d80 @board=[["R", "G", "O", "Y", 0, 0, 0, 2], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x"]], @code=["P", "Y", "W", "V"], @guesses_left=12> ([1;4mNameError[m[1m)[m
+
+[1m      if guess == code[m
+[1m                  ^^^^[m
+[1mDid you mean?  @code[m
+	from script.rb:130:in `<main>'
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+O V P W
+O
+V
+P
+W
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | W | P | V | O |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y G O W
+Y
+G
+O
+W
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | W | P | V | O |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | W | O | G | Y |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R B Y W
+R
+B
+Y
+W
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | W | P | V | O |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | W | Y | B | R |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | W | O | G | Y |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+W O P Y
+W
+O
+P
+Y
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | W | P | V | O |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 2 | 2 | Y | P | O | W |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | W | Y | B | R |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | W | O | G | Y |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y P O W
+Y
+P
+O
+W
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | W | P | V | O |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 1 | W | O | P | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 2 | 2 | Y | P | O | W |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | W | Y | B | R |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | W | O | G | Y |
++---+---+---+---+---+---+---+---+
+Congratulations! You guessed the code correctly.
+Do you want to play again? Y/N
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R W Y G
+R
+W
+Y
+G
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+B V R G
+B
+V
+R
+G
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+O P W G
+O
+P
+W
+G
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y B G O
+Y
+B
+G
+O
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R V O P
+R
+V
+O
+P
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y B O W
+Y
+B
+O
+W
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | O | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y G B R
+Y
+G
+B
+R
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 1 | 0 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | O | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+O W B G
+O
+W
+B
+G
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | G | B | W | O |
++---+---+---+---+---+---+---+---+
+| 1 | 0 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | O | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+O R V P
+O
+R
+V
+P
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | P | V | R | O |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | G | B | W | O |
++---+---+---+---+---+---+---+---+
+| 1 | 0 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | O | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+P R G B
+P
+R
+G
+B
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | B | G | R | P |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | P | V | R | O |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | G | B | W | O |
++---+---+---+---+---+---+---+---+
+| 1 | 0 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | O | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+P W B R
+P
+W
+B
+R
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | R | B | W | P |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | B | G | R | P |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | P | V | R | O |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | G | B | W | O |
++---+---+---+---+---+---+---+---+
+| 1 | 0 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | O | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+P G R V
+P
+G
+R
+V
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | G | Y | W | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | V | R | G | P |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | R | B | W | P |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | B | G | R | P |
++---+---+---+---+---+---+---+---+
+| 1 | 1 | 1 | 0 | P | V | R | O |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | G | B | W | O |
++---+---+---+---+---+---+---+---+
+| 1 | 0 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 0 | 0 | 0 | W | O | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | P | O | V | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | O | G | B | Y |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 1 | 0 | G | W | P | O |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | G | R | V | B |
++---+---+---+---+---+---+---+---+
+You're out of guesses. Better luck next time!
+Do you want to play again? Y/N
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G B Y
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | Y | B | G | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y G B R
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | Y | B | G | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+ruby script.rb
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+r R G Y
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G V
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G B W
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | Y | B | G | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | W | B | G | R |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | R | B | G | Y |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+ruy by script.rb
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:43:in `gets': [1;4mInterrupt[m
+	from script.rb:43:in `gets'
+	from script.rb:43:in `get_guess'
+	from script.rb:14:in `play'
+	from script.rb:122:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R B G & Y
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | Y | G | B | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+ruby script.rb
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G B Y
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | Y | B | G | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | Y | G | B | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+G R Y B
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | Y | B | G | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | Y | G | B | R |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 2 | 0 | 0 | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| 2 | 1 | 0 | 0 | B | Y | R | G |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+ruby script.rb
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:43:in `gets': [1;4mInterrupt[m
+	from script.rb:43:in `gets'
+	from script.rb:43:in `get_guess'
+	from script.rb:14:in `play'
+	from script.rb:122:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+You're out of guesses. Better luck next time!
+Do you want to play again? Y/N
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ru[Kuby scriptr[K.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G Y B
++---+---+---+---+---+---+---+---+
+| R | G | Y | B | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R Y G B
++---+---+---+---+---+---+---+---+
+| R | G | Y | B | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | Y | G | B | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+ruby script.rb
+Invalid input! Please try again.
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:44:in `gets': [1;4mInterrupt[m
+	from script.rb:44:in `gets'
+	from script.rb:44:in `get_guess'
+	from script.rb:14:in `play'
+	from script.rb:123:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+O V W P
++---+---+---+---+---+---+---+---+
+| x | x | x | x | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| O | V | W | P | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:52:in `gets': [1;4mInterrupt[m
+	from script.rb:52:in `gets'
+	from script.rb:52:in `get_guess'
+	from script.rb:26:in `play'
+	from script.rb:135:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+O V W Y
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| O | V | W | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:52:in `gets': [1;4mInterrupt[m
+	from script.rb:52:in `gets'
+	from script.rb:52:in `get_guess'
+	from script.rb:26:in `play'
+	from script.rb:135:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y O W P
++---+---+---+---+---+---+---+---+
+| Y | O | W | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G Y B
++---+---+---+---+---+---+---+---+
+| Y | O | W | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | Y | B | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+V B Y G
++---+---+---+---+---+---+---+---+
+| Y | O | W | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | Y | B | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| V | B | Y | G | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+RYG   Y G W
++---+---+---+---+---+---+---+---+
+| Y | O | W | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | Y | B | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| V | B | Y | G | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | Y | G | W | 2 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+Y G R Y W
++---+---+---+---+---+---+---+---+
+| Y | O | W | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | Y | B | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| V | B | Y | G | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | Y | G | W | 2 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| Y | G | R | W | 1 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+W G R Y
++---+---+---+---+---+---+---+---+
+| Y | O | W | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | Y | B | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| V | B | Y | G | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | Y | G | W | 2 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| Y | G | R | W | 1 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| W | G | R | Y | 1 | 1 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Congratulations! You guessed the code correctly.
+Do you want to play again? Y/N
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lColor choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G Y V
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+G V B W
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+G V W P
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+B G W P
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+V O W P
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+P G V R
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| P | G | V | R | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+B O Y P
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| P | G | V | R | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | O | Y | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+V P W R
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| P | G | V | R | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | O | Y | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | R | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R B O P
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| P | G | V | R | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | O | Y | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | R | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | B | O | P | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+B G V W
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| P | G | V | R | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | O | Y | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | R | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | B | O | P | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | V | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+P V G R
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| P | G | V | R | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | O | Y | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | R | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | B | O | P | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | V | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| P | V | G | R | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+B P G W
++---+---+---+---+---+---+---+---+
+| R | G | Y | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | B | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| G | V | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| B | G | W | P | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | O | W | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| P | G | V | R | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | O | Y | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | R | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | B | O | P | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | V | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| P | V | G | R | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| B | P | G | W | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+You're out of guesses. Better luck next time!
+Do you want to play again? Y/N
+Y
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R B G Y
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+B G Y O
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+G Y O V
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| G | Y | O | V | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R P W V
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| G | Y | O | V | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| R | P | W | V | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R O G V
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| G | Y | O | V | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| R | P | W | V | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | O | G | V | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R V P G
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| G | Y | O | V | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| R | P | W | V | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | O | G | V | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | V | P | G | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+RVPY    V P Y
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| G | Y | O | V | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| R | P | W | V | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | O | G | V | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | V | P | G | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | V | P | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R V P O
++---+---+---+---+---+---+---+---+
+| R | B | G | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| G | Y | O | V | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| R | P | W | V | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | O | G | V | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | V | P | G | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | V | P | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | V | P | O | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:37:in `gets': [1;4mInterrupt[m
+	from script.rb:37:in `gets'
+	from script.rb:37:in `get_guess'
+	from script.rb:14:in `play'
+	from script.rb:125:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lV
+P
+Y
+O
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G B Y
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+V R O G
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| V | R | O | G | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+V P W B
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| V | R | O | G | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | B | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+V P O Y
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| V | R | O | G | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | B | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | P | O | Y | 1 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+V P Y O
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| V | R | O | G | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | W | B | 0 | 0 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| V | P | O | Y | 1 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| V | P | Y | O | 1 | 1 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+Congratulations! You guessed the code correctly.
+Do you want to play again? Y/N
+y
+P
+W
+R
+Y
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:39:in `gets': [1;4mInterrupt[m
+	from script.rb:39:in `gets'
+	from script.rb:39:in `get_guess'
+	from script.rb:16:in `play'
+	from script.rb:127:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lP
+V
+R
+O
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+R G Y W
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | Y | W | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+B R G P
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| B | R | G | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | Y | W | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+G Y O V
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| G | Y | O | V | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| B | R | G | P | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | Y | W | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+Color choices R B G Y O V P W. Enter your 4-color guess with letters separated by spaces: 
+^Cscript.rb:39:in `gets': [1;4mInterrupt[m
+	from script.rb:39:in `gets'
+	from script.rb:39:in `get_guess'
+	from script.rb:16:in `play'
+	from script.rb:122:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lWelcome to my Mastermind game!
+You have 12 turns to try to guess the computer's code.
+The computer gives you feedback next to your guesses on the board.
+A 2 means that one of your letters is in the code, but you guessed the wrong position.
+A 1 means that one of your letters is in the code, and you guessed the right position.
+A 0 means that you guessed a letter that is not in the code.
+Good luck!
+Valid choices: R B G Y O V P W
+ Enter your 4-letter guess, separating the letters with spaces: 
+R G B Y
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: R B G Y O V P W
+ Enter your 4-letter guess, separating the letters with spaces: 
+B G Y O
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: R B G Y O V P W
+ Enter your 4-letter guess, separating the letters with spaces: 
+O V P W
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| O | V | P | W | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: R B G Y O V P W
+ Enter your 4-letter guess, separating the letters with spaces: 
+R O V P
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | O | V | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| O | V | P | W | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: R B G Y O V P W
+ Enter your 4-letter guess, separating the letters with spaces: 
+R O B G
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| R | O | B | G | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | O | V | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| O | V | P | W | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: R B G Y O V P W
+ Enter your 4-letter guess, separating the letters with spaces: 
+B O Y W
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| B | O | Y | W | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | O | B | G | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| R | O | V | P | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| O | V | P | W | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+| B | G | Y | O | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| R | G | B | Y | 0 | 0 | 1 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: R B G Y O V P W
+ Enter your 4-letter guess, separating the letters with spaces: 
+^Cscript.rb:45:in `gets': [1;4mInterrupt[m
+	from script.rb:45:in `gets'
+	from script.rb:45:in `get_guess'
+	from script.rb:21:in `play'
+	from script.rb:129:in `<main>'
+
+[?2004h]0;quinn@ion: ~/repos/mastermind[01;32mquinn@ion[00m:[01;34m~/repos/mastermind[00m$ ruby script.rb
+[?2004lWelcome to my Mastermind game!
+You have 12 turns to try to guess the computer's code.
+The computer gives you feedback next to your guesses on the board.
+A 2 means that one of your letters is in the code, but you guessed the wrong position.
+A 1 means that one of your letters is in the code, and you guessed the right position.
+A 0 means that you guessed a letter that is not in the code.
+Good luck!
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+A B G H
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| A | B | G | H | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+A D E F
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| A | D | E | F | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| A | B | G | H | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+C A G B
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| C | A | G | B | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | D | E | F | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| A | B | G | H | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+A H E C
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| A | H | E | C | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| C | A | G | B | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | D | E | F | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| A | B | G | H | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+E C A H
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| E | C | A | H | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | H | E | C | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| C | A | G | B | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | D | E | F | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| A | B | G | H | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+C H E A
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| C | H | E | A | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| E | C | A | H | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | H | E | C | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| C | A | G | B | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | D | E | F | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| A | B | G | H | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+H C A E
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| H | C | A | E | 0 | 1 | 1 | 1 |
++---+---+---+---+---+---+---+---+
+| C | H | E | A | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| E | C | A | H | 0 | 1 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | H | E | C | 0 | 2 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| C | A | G | B | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+| A | D | E | F | 0 | 0 | 0 | 2 |
++---+---+---+---+---+---+---+---+
+| A | B | G | H | 0 | 0 | 2 | 2 |
++---+---+---+---+---+---+---+---+
+Valid choices: A B C D E F G H
+Enter your 4-letter guess, separating the letters with spaces: 
+HC  C A G
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+---+---+---+---+
+| x | x | x | x | x | x | x | x |
++---+---+---+---+-
