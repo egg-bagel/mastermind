@@ -1,26 +1,27 @@
 class Game
 
-  LETTER_CHOICES = ["A", "B", "C", "D", "E", "F", "G", "H"]
+  LETTERS = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
   def initialize
     @board = Array.new(12) { Array.new(8, "x") }
     @guesses_left = 12
+    @code = nil
+    @hard_mode = false
     puts "Welcome to my Mastermind game!"
   end
 
   def play
-    puts "Do you want to be the codemaker or the codebreaker? Enter your choice: "
-    choice = gets.chomp.downcase
-    unless choice == "codemaker" || choice == "codebreaker"
-      puts "Invalid input! Please try again: "
-      choice = gets.chomp
+    puts "To play as the codebreaker, enter 1. To play as the codemaker, enter 2."
+    choice = gets.chomp
+
+    if choice == "1"
+      play_codebreaker
+    elsif choice == "2"
+      play_codemaker
+    else
+      puts "Invalid!"
     end
 
-    if choice == "codemaker"
-      play_codemaker
-    elsif choice == "codebreaker"
-      play_codebreaker
-    end
   end
 
   def print_board
@@ -42,13 +43,26 @@ class Game
     print "|"
   end
 
-#==================================================================================================================
-# CODEBREAKER METHODS
-#==================================================================================================================
+  #================================================================================================
+  # CODEBREAKER METHODS
+  #================================================================================================
 
   def play_codebreaker
+    @code = LETTERS.sample(4)
 
-    @code = LETTER_CHOICES.sample(4)
+    puts "Do you want to play on easy mode or hard mode?"
+    puts "Enter 0 for easy mode and 1 for hard mode."
+    mode_choice = gets.chomp
+    while mode_choice != "0" && mode_choice != "1"
+      puts "Invalid input: Please try again: "
+      mode_choice = gets.chomp
+    end
+
+    if mode_choice.to_i == 0
+      @hard_mode = false
+    elsif mode_choice.to_i == 1
+      @hard_mode = true
+    end
 
     puts "=============================================================================="
     puts "You have 12 turns to try to guess the computer's four-letter code."
@@ -57,12 +71,13 @@ class Game
     puts "A 1 means that one of your letters is in the code, and you guessed the right position."
     puts "A 0 means that you guessed a letter that is not in the code."
     puts "Good luck!"
+    puts "=============================================================================="
 
     while @guesses_left > 0
-      guess = get_guess
+      guess = make_guess
+      write_guess(guess)
       feedback = compare_guess(guess)
       store_feedback(feedback)
-
       print_board
 
       if guess == @code
@@ -75,31 +90,31 @@ class Game
     
     if @guesses_left == 0
       puts "You're out of guesses. Better luck next time!"
+      puts "The code was #{@code}"
     end
-    
   end
 
-  #Prompts the player to input their guess.
-  #Checks the guess for validity.
-  #Writes the guess to the board array.
-  def get_guess
+  #Prompts the player to make a guess.
+  #If input is valid, writes the guess to the board.
+  def make_guess
     puts "Valid choices: A B C D E F G H"
     puts "Enter your 4-letter guess, separating the letters with spaces: "
     guess = gets.chomp.upcase.split(" ")
     while input_error(guess)
-      puts "Invalid input! Please try again. Hint: use uppercase and put spaces between the letters."
+      puts "Invalid input! Please try again. Hint: put spaces between the letters."
       puts "Valid choices: R B G Y O V P W"
       puts "Enter your 4-letter guess, separating the letters with spaces: "
-      guess = gets.chomp.split(" ")
-    end
-
-    i = 0
-    while i <= 3
-      @board[@guesses_left - 1][i] = guess[i]
-      i += 1
+      guess = gets.chomp.upcase.split(" ")
     end
 
     return guess
+  end
+
+  def write_guess(guess)
+    current_row = @guesses_left - 1
+    guess.each_with_index do |letter, index|
+      @board[current_row][index] = guess[index]
+    end
   end
 
   #Checks that the user input is valid and the correct length
@@ -108,7 +123,7 @@ class Game
       return true
     else
       input.each do |item|
-        if LETTER_CHOICES.include?(item)
+        if LETTERS.include?(item)
           next
         else
           return true
@@ -136,7 +151,12 @@ class Game
       end
       i += 1
     end
-    return feedback_array
+
+    if @hard_mode == false
+      return feedback_array
+    else
+      return feedback_array.sort
+    end
   end
 
   #Writes the computer's feedback to the board.
@@ -149,11 +169,25 @@ class Game
     end
   end
 
-#=================================================================================================================
-# CODEMAKER METHODS
-#=================================================================================================================
+  #================================================================================================
+  # CODEMAKER METHODS
+  #================================================================================================
 
   def play_codemaker
+
+    puts "Do you want to play on easy mode or hard mode?"
+    puts "Enter 0 for easy mode and 1 for hard mode."
+    mode_choice = gets.chomp
+    while mode_choice != "0" && mode_choice != "1"
+      puts "Invalid input: Please try again: "
+      mode_choice = gets.chomp
+    end
+
+    if mode_choice.to_i == 0
+      @hard_mode = false
+    elsif mode_choice.to_i == 1
+      @hard_mode = true
+    end
 
     puts "=============================================================================="
     puts "The computer has 12 tries to guess a four-letter code of your choosing."
@@ -163,30 +197,36 @@ class Game
     puts "A 1 means that one of the letters is in your code, and the computer guessed the right position."
     puts "A 0 means that the computer guessed a letter that is not in your code."
     puts "Good luck!"
+    puts "=============================================================================="
 
-    @code = make_code
+    @code = set_code
+    @letters_available = ["A", "B", "C", "D", "E", "F", "G", "H"]
+    @known_letters = []
+    @set_letters = []
 
     while @guesses_left > 0
-      guess = computer_make_guess
-      get_player_feedback(guess)
-
+      guess = get_guess
+      write_guess(guess)
+      feedback = provide_feedback(guess)
+      store_feedback(feedback)
       print_board
 
       if guess == @code
         puts "You lose! The computer guessed your code."
         break
       end
-      
+
       @guesses_left -= 1
     end
 
     if @guesses_left == 0
-      puts "You win! The computer ran out of turns before it could guess your code."
+      puts "You win! The computer ran out of guesses."
     end
+
   end
 
   #Prompts the player to set the code for the computer to guess.
-  def make_code
+  def set_code
     puts "Enter the four-letter code you want the computer to guess.\n"
          "Separate the letters with spaces.\n"
          "Valid letter choices: A B C D E F G H"
@@ -204,7 +244,7 @@ class Game
       return true
     else 
       code.each do |letter|
-        if LETTER_CHOICES.include?(letter)
+        if LETTERS.include?(letter)
           next
         else
           return true
@@ -214,49 +254,118 @@ class Game
     return false
   end
 
-  #Gets a guess from the computer by generating a four-letter array from LETTER_CHOICES.
-  #Writes the guess to the board array.
-  def computer_make_guess
-    guess = LETTER_CHOICES.sample(4)
+  #Gets a guess from the computer. Returns an array of letters.
+  def get_guess
+    current_row_index = @guesses_left - 1
+    last_row_index = @guesses_left
 
-    i = 0
-    while i <= 3
-      @board[@guesses_left - 1][i] = guess[i]
-      i += 1
+    if @guesses_left == 12 || @hard_mode == false
+      guess = LETTERS.sample(4)
+
+    elsif @guesses_left < 12
+      sort_letters(last_row_index)
+
+      guess = Array.new(4, "x")
+      guess.each_index do |index|
+        if (@board)[last_row_index][index + 4] == 1
+          handle_1(guess, index, last_row_index)
+
+        elsif (@board)[last_row_index][index + 4] == 2 
+          handle_2(guess, index, last_row_index)
+
+        else (@board)[last_row_index][index + 4] == 0
+          handle_0(guess, index, last_row_index)
+        end
+      end
     end
 
-    puts "The computer guessed #{guess.join(" ")}."
     return guess
-
   end
 
-  #Prompts the player to enter feedback on the computer's guess.
-  #Stores the feedback in the board array.
-  def get_player_feedback(guess)
-    puts "Enter your feedback as a set of four numbers.\n"
-         "Valid input: 0, 1, 2"
-    feedback = gets.chomp.split(" ")
-
-    #If the feedback is invalid or inaccurate, the player is prompted to re-enter it.
-    unless check_feedback(feedback, guess)
-      feedback = gets.chomp.split(" ")
-    end
-
-    #If the feedback is good, write it to the second half of the current row.
-    write_player_feedback(feedback)
-      
-  end
-
-  #Writes the player's feedback to the current row.
-  def write_player_feedback(feedback)
-    current_row = @guesses_left - 1
+  #Goes through the last guess and allocates letters to @set_letters
+  #or deletes them from @letters_available or adds them to @known_letters
+  def sort_letters(last_row_index)
     i = 0
-    while i <= 3
-      @board[current_row][i + 4] = feedback[i]
+    while i < 4
+      if @board[last_row_index][i + 4] == 1
+        @letters_available.delete(@board[last_row_index][i])
+        @known_letters.delete(@board[last_row_index][i])
+        unless @set_letters.include?(@board[last_row_index][i])
+          @set_letters.push(@board[last_row_index][i])
+        end
+      elsif @board[last_row_index][i + 4] == 2
+        @letters_available.delete(@board[last_row_index][i])
+        unless @known_letters.include?(@board[last_row_index][i])
+          @known_letters.push(@board[last_row_index][i])
+        end
+      elsif @board[last_row_index][i + 4] == 0
+        @letters_available.delete(@board[last_row_index][i])
+      end
       i += 1
     end
   end
 
+  def handle_1(guess, index, last_row_index)
+    guess[index] = @board[last_row_index][index]
+  end
+
+  def handle_2(guess, index, last_row_index)
+    known_letter = @board[last_row_index][index]
+    @known_letters.each do |letter|
+      unless letter == known_letter || guess.include?(letter)
+        guess[index] = letter          
+        break
+      end
+    end
+    if guess[index] == "x"
+      if @letters_available.length == 0
+        guess[index] = known_letter
+      else
+        new_letter = @letters_available.sample
+        while guess.include?(new_letter)
+          new_letter = @letters_available.sample
+        end
+          guess[index] = new_letter
+      end
+    end
+  end
+
+  def handle_0(guess, index, last_row_index)
+    if @known_letters.length > 0
+      @known_letters.each do |letter|
+        unless guess.include?(letter)
+          guess[index] = letter
+        end
+      end
+    end
+    
+    if guess[index] == "x"
+      new_random_letter = @letters_available.sample
+        while guess.include?(new_random_letter) || @set_letters.include?(new_random_letter)
+          new_random_letter = @letters_available.sample
+        end
+      guess[index] = new_random_letter
+    end
+  end
+
+  #Prompts the user to return feedback on the computer's guess.
+  #Returns an array of integers 0 through 2.
+  def provide_feedback(guess)
+    puts "The computer guessed #{guess}."
+    puts "Now return feedback on how accurate this guess was."
+    puts "Enter four integers, 0 through 2, separated by spaces."
+    feedback = gets.chomp.split(" ")
+    feedback.map! { |x| x.to_i}
+
+    while check_feedback(feedback, guess) == false
+      feedback = gets.chomp.split(" ")
+      feedback.map! { |x| x.to_i}
+    end
+
+    return feedback
+  end
+
+  #Checks the player's feedback for validity and accuracy.
   def check_feedback(feedback, guess)
     #First check the validity of the input
     if feedback.length != 4
@@ -265,7 +374,7 @@ class Game
     else
       feedback.each do |num|
         a = [0, 1, 2]
-        unless a.include?(num.to_i)
+        unless a.include?(num)
           puts "Invalid input, please try again: "
           return false
         end
@@ -290,7 +399,6 @@ class Game
       i += 1      
     end
 
-    feedback.map! { |x| x.to_i}
     if feedback == feedback_verify
       return true
     else
@@ -302,12 +410,16 @@ class Game
 
 end
 
-test = Game.new()
-test.play
-puts "Do you want to play again? Y/N"
-play_again = gets.chomp.upcase
-while play_again == "Y"
-  new_game = Game.new()
+play = true
+while play == true
+  new_game = Game.new
   new_game.play
+  puts "Do you want to play again? Enter Y if so: "
+  play_again = gets.chomp.upcase
+  if play_again == "Y"
+    play = true
+    next
+  else
+    play = false
+  end 
 end
-
